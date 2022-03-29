@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title> ROCK | PAPER | SCISSOR </title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div class="container">
+         <div class="details">
+
+         <div class="title">
+          <p>ROCK</p>
+          <P>PAPER</P>
+          <p>SCISSOR</p>
+         </div>
+
+         <div class="scores">
+            <p>User Score: <span id="user-score">0</span></p>
+            <p>Computer Score: <span id="comp-score">0</span></p>
+         </div>
+
+         </div>
+
+         <div class="weapons">
+              <button  onclick="game('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+              <button  onclick="game('paper')"><i class="fa-solid fa-hand"></i></button>
+              <button  onclick="game('scissor')"><i class="fa-solid fa-hand-scissors"></i></button>
+
+         </div>
+
+         <div class="result">
+            <p id="user-choice"></p>
+            <p id="comp-choice"></p>
+            <p id="Result"></p>
+
+         </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

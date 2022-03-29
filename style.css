@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}  
+
+:root{
+   --clr-primary : #FFFFFF;
+   --clr-secondary :#FF0000 ;
+
+}
+
+html{
+    font-size:16px;
+}
+
+
+body
+{
+    background-color: var(--clr-primary);
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    color: #1c2042;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 80%;
+    max-width: 30rem;
+    height: auto;
+    padding: 3rem 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.45);
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.details .title{
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.details .scores span{
+    font-weight: 900;
+}
+
+.weapons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.weapons button{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    background-color: var(--clr-secondary);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.result {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
+}
+
+.result p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.result p:last-child{
+    color: var(--clr-secondary);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
